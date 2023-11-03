@@ -1,0 +1,113 @@
+
+
+section{
+    .home-top{
+        background: url("../assets/images/intro.jpg") no-repeat;
+        background-size: cover;
+        min-height: 90vh;
+        background-origin: content-box;
+
+        .text{
+            padding: 5em 10em;
+
+            h1{
+                font-size: 3em;
+                width: 50%;
+                color: var(--text-color);
+                margin: 1em 0;
+            }
+            p{
+                width: 50%;
+                color: var(--text-color);
+            }
+            button{
+                padding: 1em 3em;
+                border-radius: 2em;
+                border: none;
+                background-color: var(--text-color);
+                color: white;
+                cursor: pointer;
+                margin-top: 3em;
+
+               
+            }
+            button:active{
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+.home-section{
+    padding: 4em 5em;
+
+    .roller{
+        display: flex;
+        margin: 2em 0;
+        overflow: scroll;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    
+        a{
+            margin: 0 1em;
+            background-color: var(--bg-input);
+            padding: 0.2em 1em;
+            border-radius: 1em;
+        }
+        a:active{
+            transform: scale(0.9);
+        }
+        }
+    .roller::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+.product-card{
+    width: 18em;
+    margin: 1em;
+    background-color: white;
+    a{
+        flex-direction: column;
+
+        .img{
+            height: 300px;
+            background-color: red;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0.5em 0;
+            h2{
+                font-size: 1.1em;
+            }
+        }
+        p{
+            text-align: start;
+            width: 90%;
+            margin: 5px 0;
+        }
+       
+    }
+    a:active{
+        transform: none;
+    }
+}
+
+.btn-transparent{
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    background: transparent;
+    margin: 1em ;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.btn-transparent:active{
+    transform: scale(0.9);
+}

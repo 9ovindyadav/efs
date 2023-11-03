@@ -1,0 +1,92 @@
+.cloths{
+    display: flex;
+    align-items: start;
+    margin: 1em 0;
+    position: sticky;
+    @media (max-width:900px) {
+        flex-direction: column;
+    }
+}
+
+.filter-bar{
+    width: 20%;
+    position: sticky;
+    height: 80vh;
+    top: 4em;
+    background-color: white;
+    padding: 1em;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 0 1em;
+
+    @media (max-width:900px) {
+        display: none;
+    }
+   .heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    button{
+        padding: 0.2em 1em;
+    }
+    h1{
+        color: grey;
+        font-size: 1.3em;
+    }
+   }
+
+  
+   .condition{
+    background-color: white;
+    padding: 0.3em 1em;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    margin-top: 1em;
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    p{
+        color: grey;
+    }
+    svg{
+        font-size: 2em;
+        color: grey;
+    }
+    .panel{
+
+        input{
+            margin: 0.4em 1em;
+        }
+    }
+   }
+    
+}
+
+.products{
+    width: 80%;
+    @media (max-width:900px) {
+        width: 100%;
+    }
+   .bottom{
+    margin: 1em;
+    .pages{
+        text-align: center;
+        font-size: 1.5em;
+        span{
+           padding: 0 0.5em;
+           background-color: grey;
+           margin: 0.2em;
+           cursor: pointer;
+           border-radius: 10%;
+        }
+    }
+   }
+}
+
+.product-col{
+    display: flex;
+    flex-wrap: wrap;
+}
